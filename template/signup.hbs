@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/signup.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="/signup.css">
+    <title>Sign Up</title>
 </head>
 <body>
-    <h2>Sign up</h2>
-    <form action="/signup" method="post">
-    <input type="text" name="name" id="name" placeholder="Name">
-    <input type="password" name="password" id="password" placeholder="password">
-    <input type="submit">
-    </form>
+    <div class="container">
+        <h2>Create Account</h2>
+        <form action="/signup" method="post">
+            <input type="text" name="name" id="name" placeholder="Choose a username">
+            <input type="password" name="password" id="password" placeholder="Choose a password">
+            <input type="submit" value="Sign Up">
+        </form>
+        <a href="/">Already have an account? Login</a>
+    </div>
 </body>
 </html>

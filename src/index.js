@@ -5,11 +5,13 @@ const hbs = require("hbs");
 const collection = require("./mongodb")
 
 const templatePath = path.join(__dirname, "../template");
+const publicPath = path.join(__dirname, "../public");
+
 app.use(express.json());
+app.use(express.static(publicPath)); 
 app.set("view engine", "hbs");
 app.set("views", templatePath);
 app.use(express.urlencoded({ extended: false }));
-
 
 app.get("/", (req, res) => {
   res.render("login");
